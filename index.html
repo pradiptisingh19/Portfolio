@@ -7,61 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pradipti | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <main class="main-content">
-    <div class="main-card">
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active">About</button></li>
-          <li class="navbar-item"><button class="navbar-link">Resume</button></li>
-          <li class="navbar-item"><button class="navbar-link">Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link">Contact</button></li>
-        </ul>
-      </nav>
-
-      <section class="about" id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-          <div class="about-text-wrapper">
-            <p>
-  I'm a final-year Computer Science student at DTU who loves building clean, responsive interfaces with React.js and JavaScript. Graph problems are my DSA comfort zone, and I enjoy simplifying complex logic into neat, workable solutions.
-</p>
-<p>
-  When I'm not coding, I'm probably painting, vibing with music or poetry, or getting lost in a museum. I'm naturally curious — and occasionally annoying — when someone knows something I want to learn.
-</p>
-
-          </div>
-          <div class="about-image-wrapper">
-            <img src="my-photo.jpg" alt="Pradipti" class="about-photo">
-          </div>
+    <section class="about" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            I'm a final-year Computer Science student at DTU who loves building clean, responsive interfaces with React.js and JavaScript. Graph problems are my DSA comfort zone, and I enjoy simplifying complex logic into neat, workable solutions.
+          </p>
+          <p>
+            When I'm not coding, I'm probably painting, vibing with music or poetry, or getting lost in a museum. I'm naturally curious — and occasionally annoying — when someone knows something I want to learn.
+          </p>
         </div>
-      </section>
-
-      <section class="what-doing">
-        <h3 class="section-title">What I'm Doing</h3>
-        <ul class="service-list">
-          <li class="service-item">
-            <h4 class="service-title">Frontend Web Development</h4>
-            <p class="service-desc">Building interactive, responsive UIs using HTML, CSS, JavaScript, and React.js. I focus on creating intuitive, fast-loading websites with clean code structure.</p>
-          </li>
-          <li class="service-item">
-            <h4 class="service-title">Machine Learning Projects</h4>
-            <p class="service-desc">Applying Python, Pandas, and Scikit-learn to build small-scale ML models like house price predictors and classification tools with meaningful accuracy.</p>
-          </li>
-          <li class="service-item">
-            <h4 class="service-title">Personal Projects</h4>
-            <p class="service-desc">Creating side-projects like currency converters, crypto dashboards, and portfolio sites to deepen my hands-on learning and explore new frameworks.</p>
-          </li>
-        </ul>
-      </section>
-
-    </div>
+        <div class="about-image">
+          <img src="new.jpg" alt="Pradipti's Photo">
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 
