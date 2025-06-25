@@ -7,24 +7,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pradipti | Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul class="navbar-list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile-pic">
+        <img src="new.jpg" alt="Pradipti's Photo">
+      </div>
+      <h1>Pradipti Singh</h1>
+      <p class="title">Frontend Developer</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:pradipti.singh8@gmail.com">pradipti.singh8@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> +91 99682 69089</p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/pradiptisingh19" target="_blank">github.com/pradiptisingh19</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/pradipti-singh-714374258/" target="_blank">linkedin.com/in/pradipti-singh-714374258</a></p>
+      </div>
+    </aside>
 
-  <main class="main-content">
-    <section class="about" id="about">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-container">
+    <main class="main-panel">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
+
+      <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
         <div class="about-text">
           <p>
             I'm a final-year Computer Science student at Delhi Technological University who loves building clean, responsive interfaces with React.js and JavaScript. Graph problems are my DSA comfort zone, and I enjoy simplifying complex logic into neat, workable solutions.
@@ -32,62 +44,57 @@
           <p>
             When I'm not coding, I'm probably painting, vibing with music or poetry, or getting lost in a museum. I'm naturally curious — and occasionally annoying — when someone knows something I want to learn.
           </p>
+          <p style="text-align: center;"><i>"Frontend dev. DSA explorer. Always curious."</i></p>
         </div>
-        <div class="about-image">
-          <img src="new.jpg" alt="Pradipti's Photo">
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-card">
+          <h3>TrendCoin</h3>
+          <p>A real-time cryptocurrency dashboard displaying top 7 coins using data from a public API. Responsive and intuitive UI built with HTML, CSS, and JavaScript.</p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript, CoinGecko API</p>
+          <a href="https://github.com/Pragya321Mehra/execute3.0-project" target="_blank">GitHub</a>
         </div>
-      </div>
-    </section>
-    <section class="projects" id="projects">
-  <h2 class="section-title">Projects</h2>
 
-  <div class="project-card">
-    <h3>TrendCoin</h3>
-    <p>A real-time cryptocurrency dashboard displaying top 7 coins using data from a public API. Responsive and intuitive UI built with HTML, CSS, and JavaScript.</p>
-    <p><strong>Tech:</strong> HTML, CSS, JavaScript, CoinGecko API</p>
-    <a href="https://github.com/Pragya321Mehra/execute3.0-project" target="_blank">GitHub</a>
+        <div class="project-card">
+          <h3>Exchangify</h3>
+          <p>A currency converter supporting 100+ currencies with real-time exchange rates. Simple design, smooth experience.</p>
+          <p><strong>Tech:</strong> HTML, CSS, JavaScript, ExchangeRate API</p>
+          <a href="https://github.com/pradiptisingh19/currency-converter" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h3>House Price Prediction</h3>
+          <p>Used machine learning to build a model that predicts house prices with 77% accuracy. Applied linear regression and visualized results using Python libraries.</p>
+          <p><strong>Tech:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
+          <a href="https://github.com/pradiptisingh19/House-price-prediction" target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-subsection">
+          <h3>Technical Skills</h3>
+          <p><strong>Languages:</strong> C++, Python, Qiskit, SQL, JavaScript, HTML, CSS</p>
+          <p><strong>Libraries & frameworks:</strong> React.js, NumPy, Pandas, scikit-learn, Matplotlib</p>
+          <p><strong>Software & Tools:</strong> Git, LaTeX, QSim</p>
+        </div>
+
+        <div class="skills-subsection">
+          <h3>Currently Learning</h3>
+          <p><strong>Quantum Communication:</strong> As part of my DRDO internship, I'm exploring quantum gates, circuits, and algorithms using Qiskit and QSim. It's helped me understand communication from a completely new dimension.</p>
+          <p><strong>TypeScript:</strong> To improve my React development, I've started learning TypeScript to build more scalable and type-safe components. It's been a great next step from JavaScript for writing cleaner code.</p>
+        </div>
+      </section>
+    </main>
   </div>
-
-  <div class="project-card">
-    <h3>Exchangify</h3>
-    <p>A currency converter supporting 100+ currencies with real-time exchange rates. Simple design, smooth experience.</p>
-    <p><strong>Tech:</strong> HTML, CSS, JavaScript, ExchangeRate API</p>
-    <a href="https://github.com/pradiptisingh19/currency-converter" target="_blank">GitHub</a>
-  </div>
-
-  <div class="project-card">
-    <h3>House Price Prediction</h3>
-    <p>Used machine learning to build a model that predicts house prices with 77% accuracy. Applied linear regression and visualized results using Python libraries.</p>
-    <p><strong>Tech:</strong> Python, Pandas, NumPy, Scikit-learn, Matplotlib</p>
-    <a href="https://github.com/pradiptisingh19/House-price-prediction" target="_blank">GitHub</a>
-  </div>
-</section>
-  <section class="skills" id="skills">
-      <h2 class="section-title">Skills</h2>
-
-      <div class="skills-subsection">
-        <h3>Technical Skills</h3>
-        <p><strong>Languages:</strong> C++, Python, Qiskit, SQL, JavaScript, HTML, CSS</p>
-        <p><strong>Libraries & frameworks:</strong> React.js, NumPy, Pandas, scikit-learn, Matplotlib</p>
-        <p><strong>Software & Tools</strong> Git, LaTeX, QSim</p>
-      </div>
-
-      <div class="skills-subsection">
-        <h3>Currently Learning</h3>
-        <p><strong>Quantum Communication:</strong> As part of my DRDO internship, I'm exploring quantum gates, circuits, and algorithms using Qiskit and QSim. It's helped me understand communication from a completely new dimension.</p>
-        <p><strong>TypeScript:</strong> To improve my React development, I've started learning TypeScript to build more scalable and type-safe components. It's been a great next step from JavaScript for writing cleaner code.</p>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> <a href="pradipti.singh@gmail.com">Email: pradipti.singh8@gmail.com</a></p>
-        <p><i class="fas fa-phone"></i> Phone: +91 99682 69089</p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/pradiptisingh19" target="_blank">Github: github.com/pradiptisingh19</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/pradipti-singh-714374258/" target="_blank">LinkedIn: linkedin.com/in/pradipti-singh-714374258/</a></p>
-      </div>
-    </section>
-  </main>
 </body>
 
 </html>
