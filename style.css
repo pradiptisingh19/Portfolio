@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -23,23 +24,32 @@ body {
 
 /* Sidebar */
 .sidebar {
+  background-color: #0f0f0f;
+}
+.sidebar-panel{
   width: 280px;
   background-color: #1a1a1a;
   min-height: 100vh;
   padding: 40px 20px;
+  margin: 50px;
+  border-radius: 5%;
   color: white;
   border-right: 1px solid #333;
   position: fixed;
   top: 0;
   left: 0;
 }
-
+.name, .title{
+  /* padding: 0px 20px 0px 40px; */
+  text-align: center;
+  font-size: 40px;
+}
 .sidebar img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 20px;
+  margin: 20px 20px 20px 45px;
   border: 3px solid #d4af37;
   box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
 }
@@ -56,13 +66,13 @@ body {
 }
 
 .sidebar .contact-info p {
-  font-size: 14px;
-  margin: 10px 0;
+  font-size: 17px;
+  margin: 20px 0;
   color: #e0e0e0;
 }
 
 .sidebar .contact-info a {
-  color: #d4af37;
+  color: #e8e6e0;
   text-decoration: none;
 }
 
@@ -78,10 +88,21 @@ body {
 }
 
 /* Navbar */
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 40px;
+  position: sticky;
+} */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #0f0f0f;
+  padding: 20px 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #222;
 }
 
 .navbar-list {
@@ -129,7 +150,9 @@ body {
   margin-bottom: 18px;
   color: #e0e0e0;
 }
-
+.about,.projects,.skills{
+  padding: 0px 30px;
+}
 /* Divider */
 .section-divider {
   margin: 60px 0;
@@ -180,8 +203,9 @@ body {
 }
 
 /* Skills Section */
+
 .skills-subsection h3 {
-  color: #ffffff;
+  color: #d4af37;
   margin-bottom: 10px;
 }
 
