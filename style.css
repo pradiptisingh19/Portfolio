@@ -187,3 +187,29 @@ body {
   background-color: #d4af37;
   color: #0f0f0f;
 }
+/* ====== Skills Section ====== */
+.skills {
+  /* margin-top: 180px; */
+  padding: 60px 0;
+}
+
+.skills-subsection {
+  margin-bottom: 40px;
+}
+
+.skills-subsection h3 {
+  color: #d4af37;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.skills-subsection p {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.skills-subsection strong {
+  color: #ffffff;
+}
